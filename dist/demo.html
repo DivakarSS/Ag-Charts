@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ag-charts demo</title>
+<script src="./ag-charts.umd.min.js"></script>
+<link rel="stylesheet" href="./ag-charts.css">
+<ag-charts></ag-charts>
+<script>
+    $(document).ready(function () {
+        try{
+                    let linkElem = document.createElement('link');
+                    linkElem.setAttribute('rel', 'stylesheet');
+                    linkElem.setAttribute('href', './ag-charts.umd.min.js');
+                    document.getElementsByTagName("ag-charts")[0].shadowRoot.appendChild(linkElem);
+                }
+                catch(err){
+                    console.log("error in shadowRoot -> ",err.message)
+                }
+    })
+</script>
