@@ -254,7 +254,105 @@ export default ({
                 let callGetDealGuidanceCustomerHistoricalComparison = true;
                     if (callGetDealGuidanceCustomerHistoricalComparison) {
                         setTimeout(() => {
-                            let dealGuidanceCustomerHistoricalComparisonJsonStr = {};
+                            let dealGuidanceCustomerHistoricalComparisonJsonStr = {
+    "customerHistoricalComparisonTotalData": {
+        "capitalGlobalData": [
+            {
+                "customer_name_parent": "DIVAKAR",
+                "cost_per_unit_sum": "9345.3256",
+                "price_per_unit_sum": "8903.9834",
+                "list_price_per_unit_sum": "5394.3333",
+                "list_price_percent": "22.35",
+                "cm_percent": "12.89",
+                "cost_total": "50321.06000000",
+                "list_price_total": "67384.00000000",
+                "sales_total": "98345.88000000"
+            },
+            {
+                "customer_name_parent": "YASHWANTH",
+                "cost_per_unit_sum": "98432.8900",
+                "price_per_unit_sum": "43945.7500",
+                "list_price_per_unit_sum": "104256.4000",
+                "list_price_percent": "22.18",
+                "cm_percent": "21.60",
+                "cost_total": "8982323.23000000",
+                "list_price_total": "3245672.94000000",
+                "sales_total": "2347182.29000000"
+            },
+            {
+                "customer_name_parent": "JACK",
+                "cost_per_unit_sum": "100234.4400",
+                "price_per_unit_sum": "152783.0000",
+                "list_price_per_unit_sum": "289111.6000",
+                "list_price_percent": "42.88",
+                "cm_percent": "44.42",
+                "cost_total": "493456.48000000",
+                "list_price_total": "8067674.34000000",
+                "sales_total": "3821673.58000000"
+            },
+            {
+                "customer_name_parent": "John",
+                "cost_per_unit_sum": "24879.9000",
+                "price_per_unit_sum": "40219.9600",
+                "list_price_per_unit_sum": "70457.9500",
+                "list_price_percent": "38.11",
+                "cm_percent": "30.20",
+                "cost_total": "49198.80000000",
+                "list_price_total": "143457.90000000",
+                "sales_total": "82093.92000000"
+            }
+        ],
+        "nonCapitalGlobalData": [
+            {
+                "customer_name_parent": "JAMES",
+                "cost_per_unit_sum": "179345.3400",
+                "price_per_unit_sum": "145321.1100",
+                "list_price_per_unit_sum": "523458.4400",
+                "list_price_percent": "39.13",
+                "cm_percent": "-27.26",
+                "cost_total": "395545.67000000",
+                "list_price_total": "1193456.40000000",
+                "sales_total": "327654.15000000"
+            },
+            {
+                "customer_name_parent": "ROBERT",
+                "cost_per_unit_sum": "41722.1800",
+                "price_per_unit_sum": "47044.7400",
+                "list_price_per_unit_sum": "133323.4500",
+                "list_price_percent": "23.06",
+                "cm_percent": "17.63",
+                "cost_total": "48243.39000000",
+                "list_price_total": "189737.31000000",
+                "sales_total": "84499.42000000"
+            },
+            {
+                "customer_name_parent": "TONY",
+                "cost_per_unit_sum": "164324.9200",
+                "price_per_unit_sum": "184573.8400",
+                "list_price_per_unit_sum": "422900.5300",
+                "list_price_percent": "33.74",
+                "cm_percent": "11.77",
+                "cost_total": "455017.56800000",
+                "list_price_total": "1407094.10000000",
+                "sales_total": "777668.83800000"
+            },
+            {
+                "customer_name_parent": "STEVE",
+                "cost_per_unit_sum": "28915.7300",
+                "price_per_unit_sum": "45341.7100",
+                "list_price_per_unit_sum": "91183.9500",
+                "list_price_percent": "48.89",
+                "cm_percent": "25.81",
+                "cost_total": "111333.37000000",
+                "list_price_total": "340889.43000000",
+                "sales_total": "137187.49000000"
+            }
+        ],
+        "capitalRegionalData": [],
+        "nonCapitalRegionalData": []
+    },
+    "customerNameParent": "TOSHIBA ENERGY SYSTEMS & SOLUTIONS CORPORATION"
+};
                             if (dealGuidanceCustomerHistoricalComparisonJsonStr) {
                                 let parsedData = dealGuidanceCustomerHistoricalComparisonJsonStr;
                                 this.customerNameParent = parsedData.customerNameParent;
